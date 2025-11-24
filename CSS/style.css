@@ -1,0 +1,278 @@
+/* ...existing code... */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(../imagem_de_background/background.jpg);
+    margin: 1px;
+    padding:2px;
+    background-color: #181a20;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ /* CABECÁRIO DA PAGINA  */
+
+ .titulo{
+    background-image: url(../fundo_do_cabecario/cabecario_5.jpeg);
+    border-radius: 20px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    height: 120px;
+    width: 90%;
+    justify-content: space-between;
+    border: 1px solid  #c98a1e;
+    
+ }
+
+ .nome{
+    text-transform: capitalize;
+    color: white;
+    font-size: 40px;
+    align-content: center;
+    margin-left: 5%;
+ }
+
+ .nome span{
+    color: #c98a1e;
+    display: inline;
+ }
+
+ .perfil{
+    border-radius: 50%;
+    align-items: flex-end;
+    margin-right: 3%;
+ }
+
+
+ /* CONSTRUÇÃO DO ICONE FLUTUANTE DO WHATSAPP */
+ 
+ .icone_flutuante_do_whatsapp{
+    position: fixed;
+    bottom: 15px;
+    right: 20%;
+    z-index: 1000;
+ }
+
+ .imagem_icone_flutuante{
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+
+
+ /* DESCRIÇÃO DO TATUADOR */
+
+ .tattoo{
+    margin:auto;
+    justify-items: center;
+    margin-top: 70px;
+ }
+
+ .descricao_tatuador{
+    background-color: rgba(0, 0, 0, 0.683);
+    color:  #eca01d;
+    font-size: 23px;
+    padding: 2px;
+    text-transform: capitalize;
+ }
+
+ .descricao_da_tatuagem{
+    color: rgb(255, 255, 255);
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+ }
+
+
+ /* CATALOGO DE SERVICOS  */
+
+ /* .catalogo{
+   color: white;
+   text-transform: capitalize;
+   font-size: 22px;
+   margin-top: 100px;
+   margin-left: 31%;
+} */
+
+.card_catalogo{
+    border: 2px solid  #c98a1e;
+    margin: auto;
+    margin-top: 60px;
+    width: 250px;
+    height: 400px;
+    border-radius: 5%;
+    background-color: rgb(255, 254, 254);
+}
+
+.foto_do_card{
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card_catalogo h3{
+    text-transform: uppercase;
+    margin-left: 5%;
+}
+
+.card_catalogo p{
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+
+.link_whatsapp{
+    /* border: 2px solid black; */
+    display: flex;
+    margin-top: 9px;
+    justify-items: left;
+      
+}
+
+.img_logo_whats{
+    margin-top: 0.1px;
+    border-radius: 20px;
+}
+
+.card_catalogo a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #0aaa276c;
+    border-radius: 20px;
+    align-content: center;
+    margin-left: -6px;
+    height: 29px;
+    padding-left: 10px;
+    padding-right: 8px;
+    margin-top: 11px;
+   
+}
+
+.card_catalogo a:hover{
+    background-color: rgb(0, 255, 72);
+}
+
+/* SESSAO DO ARTISTA */
+
+.artista{
+    background-image: url(../foto_de_fundo_artista/fotodostudio.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-top:5%;
+    justify-items: center;
+    
+}
+
+.foto_artista{
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 50px
+    
+    
+}
+
+.historia_tatuador{
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(18px) ;
+    border-radius: 20px;
+    border: 2px solid  #c98a1e;
+    display: block;
+    justify-items: center;
+    margin: auto;
+    width: 90%;
+}
+
+
+.artista h3{
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    margin: auto;
+    margin-left: 12%;
+    margin-top: 1%;
+
+}
+.artista p{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+}
+
+
+
+
+/* CONSTRUÇÃO DO QRCODE E LINK DE ACESSO A LOCALIZAÇÃO */
+
+.localizacao{
+    margin-top: 5%;
+    height: auto;
+    
+}
+
+.qrcode{
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 15px;
+    border: 2px solid  #c98a1e;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+.saudacao_local{
+    color:  #c98a1e;
+    display: grid;
+    text-transform: uppercase;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.local{
+    display: flex;
+}
+
+.saudacao{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    height: 10%;
+    width: 70%;
+    text-transform: uppercase;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.saudacao:hover{
+    background-color: #c98a1e;
+    color: white;
+}
+
+
+.alfinete{
+   margin-left: 4px;
+   border-radius: 50%;
+}
+  
+/* RODAPE DA PAGINA */
+
+.rodape{
+   justify-items: center;
+   background-color: rgba(255, 255, 255, 0.119);
+   padding: 5px;
+   margin-top: 70px;
+}
+
+.rodape p{
+    color: white;
+    text-shadow: 2px 2px  0.4px rgba(0, 0, 0, 0.525) ;
+}
