@@ -65,8 +65,8 @@ main{
  
  .icone_flutuante_do_whatsapp{
     position: fixed;
-    bottom: 1.5em;
-    right: 1.5em;
+    bottom: 2.5em;
+    right: 2.5em;
     z-index: 1000;
  }
 
@@ -324,6 +324,9 @@ main{
    background-color: rgba(255, 255, 255, 0.119);
    padding: 0.5em;
    margin-top: 7em;
+   border-radius: 2em;
+   padding-left: 2em;
+   padding-right: 2em;
 }
 
 .rodape p{
