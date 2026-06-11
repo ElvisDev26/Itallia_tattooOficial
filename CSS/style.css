@@ -1,301 +1,243 @@
-/* ...existing code... */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-:root{
+:root {
     --color_menu: #ffffff;
 }
 
-html{
-    font-size: 62.5%;
-}
-
-body{
-    background-image: url(../flex/363928.jpg);
-    background-attachment: fixed;
-} 
-
-main{
+html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    min-width: 390px;
 }
 
- /* CABECÁRIO DA PAGINA  */
+body {
+    background-image: url(../flex/363928.jpg);
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+    width: 100%;
+}
 
-
-
- .titulo{
+main {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    background-color: #000000;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+}
+
+
+
+/* CABECÁRIO DA PAGINA  */
+
+
+
+.titulo {
+    display: flex;
+    flex-direction: column;
     border-bottom-left-radius: 1.5em;
     border-bottom-right-radius: 1.5em;
- }
+    width: 95%;
+    margin-top: 5%;
+
+}
 
 
-  .inicio_do_titulo{
+.inicio_do_titulo {
     display: flex;
     background-image: url(../fundo_do_cabecario/cabecario_5.jpeg);
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     border-radius: 1.5em;
     justify-content: space-between;
-    padding: 3em;
-    border-top: 0.02px solid #ccc;
-    margin: 1.3rem;
-  }
+    padding: 1em;
+    border: 0.02px solid #ccc;
+}
 
-  .inicio_do_titulo h1{
+.inicio_do_titulo h1 {
     color: #ffffff;
     font-size: 2.8rem;
     margin-top: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.9rem;
-  }
+}
 
-  .inicio_do_titulo img{
+.inicio_do_titulo img {
     border-radius: 50%;
-  }
+}
 
-  .menu_lista{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1em;
-  }
+/* CONSTRUÇÃO DO ICONE FLUTUANTE DO WHATSAPP */
 
-  .menu_lista li{
-    display: flex;
-    align-content: center;
-    list-style-type: none;
-
-  }
-
-  .menu_lista a{
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    border: 0.5px solid var(--color_menu);
-    border-radius: 2em;
-    padding: 1.5em;
-    text-align: center;
-  }
-
-  .menu_lista a:hover{
-    background: linear-gradient(grey, white);
-    color: #000;
-  }
-
-  .menu_de_navegacao{
-    background: linear-gradient(black, rgb(51, 47, 47));
-    border-bottom: 0.02px solid #ccc;
-    border-bottom-left-radius: 1.5em;
-    border-bottom-right-radius: 1.5em;
-    padding-bottom: 1em;
-    margin-top: 0;
-  }
-
-
-
-
- /* CONSTRUÇÃO DO ICONE FLUTUANTE DO WHATSAPP */
- 
- .icone_flutuante_do_whatsapp{
+.icone_flutuante_do_whatsapp {
     position: fixed;
     bottom: 2em;
     right: 2em;
     z-index: 1000;
- }
+}
 
 
- .imagem_icone_flutuante{
+.imagem_icone_flutuante {
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 0.2em solid silver;
- }
+}
 
+/* DESCRIÇÃO DO TATUADOR */
 
- /* DESCRIÇÃO DO TATUADOR */
-
- .tattoo{
+.tattoo {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: center;
-    margin-top: 80%;
-    width: 27em;
- }
+    text-align: center;
+    margin-top: 5%;
+    width: 70%;
+}
 
- .descricao_tatuador{
-    backdrop-filter: blur(6px);
-    color:  #eeece7;
+.descricao_tatuador {
+    backdrop-filter: blur(8px);
+    color: #eeece7;
     font-size: 2.3em;
     text-align: center;
     border-radius: 1em;
     text-transform: uppercase;
- }
+    letter-spacing: 0.2em;
+}
 
- .descricao_da_tatuagem{
+.descricao_da_tatuagem {
     color: rgb(255, 255, 255);
     backdrop-filter: blur(6px);
-    width: auto;
-    padding: 1em;
     border-radius: 20px;
+    margin-top: 2em;
     font-size: 1.4em;
     text-align: center;
-    letter-spacing: 0.02em;
- }
+    letter-spacing: 0.08em;
+}
 
 
- /* CATALOGO DE SERVICOS  */
+/* CATALOGO DE SERVICOS  */
 
- /* .catalogo{
-   color: white;
-   text-transform: capitalize;
-   font-size: 22px;
-   margin-top: 100px;
-   margin-left: 31%;
-} */
 
-.card_catalogo{
+.card_catalogo {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #ffffff;
-    border: 0.3em solid  silver;
-    margin: auto;
+    border: 0.3em solid silver;
     margin-top: 4em;
-    width: 70%;
-    height: auto;
     border-radius: 1.5em;
     backdrop-filter: blur(6px);
-    padding: 0;
+    width: 90%;
+    height: auto;
 }
 
-.foto_do_card{
-    width: 100%;
-    height: 50%;
+.foto_do_card {
+    width: 90%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
-.card_catalogo h3{
+.card_catalogo h3 {
     display: flex;
     flex-direction: column;
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
     padding: 02rem 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.13rem;
+    color: rgb(0, 255, 234);
 }
 
-.card_catalogo p{
+.card_catalogo p {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     padding: 2em;
-    width: 20em;
-    margin: auto;
+    width: 70%;
     text-transform: capitalize;
     font-size: 1.2em;
     color: #ffffff;
-    margin-bottom: 2em;
-    
+    margin-bottom: 0.5em;
+    letter-spacing: 0.06em;
+    text-align: center;
+
 }
 
-.link_whatsapp{
-    display: flex;
+.link_whatsapp {
     justify-content: center;
     flex-wrap: wrap;
-    color: #ffffff;
 }
 
-
-
-/* .img_logo_whats{
-    margin-top: 0.1px;
-    border-radius: 20px;
-} */
-
-.card_catalogo a{
+.card_catalogo a {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 255, 42);
+    text-align: center;
+    color: rgb(0, 255, 234);
     text-transform: uppercase;
     text-decoration: none;
     border: 0.2em solid white;
     backdrop-filter: blur(6px);
     border-radius: 20px;
-    align-content: center;
-    margin-left: -6px;
     font-size: 1em;
     margin-bottom: 1.6em;
-    width: 20em;
-    height: 4em;
-    padding: auto;
+    width: 70%;
+    padding: 1.5em;
     margin-top: 0.5em;
-   
+
 }
 
-.card_catalogo a:hover{
+.card_catalogo a:hover {
     color: #000000;
-    background-color: rgb(0, 255, 13);
+    background-color: rgb(0, 255, 234);
 }
 
 /* SESSAO DO ARTISTA */
 
-.artista{
+.artista {
     display: flex;
     flex-direction: column;
-    background-position: center;
-    margin-top:5%;
-}
-
-.foto_de_costas{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
     align-items: center;
-    backdrop-filter: blur(6px);
-    border-radius: 2em;
+    margin-top: 10%;
+
 }
 
-.foto_artista{
-    margin-top: 6em;
-    margin-bottom: 5em;
+.foto_artista {
+
+    width: 95%;
+    border-radius: 1em;
 }
 
-.historia_tatuador{
+.historia_tatuador {
     display: flex;
     flex-direction: column;
     align-items: center;
-    backdrop-filter: blur(6px) ;
-    border-radius: 2em;
-    border: 2px solid  silver;
+    backdrop-filter: blur(6px);
+    border-bottom: 0.2em solid silver;
+    margin-top: 7%;
 }
 
 
-.artista h3{
-    color: rgb(255, 255, 255);
+.artista h3 {
+    padding-top: 1em;
+    color: rgb(0, 255, 234);
     background-color: rgba(255, 255, 255, 0);
-    
+    letter-spacing: 0.08em;
+
 }
-.artista p{
+
+.artista p {
     color: rgb(255, 255, 255);
-    padding: 2em;
-    letter-spacing: 0.1em;
+    padding: 0.6em;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.15em;
+    line-height: 1.7em;
+    text-indent: 1em;
     width: 90%;
-    margin: 0.1em;
 }
 
 
@@ -303,88 +245,62 @@ main{
 
 /* CONSTRUÇÃO DO QRCODE E LINK DE ACESSO A LOCALIZAÇÃO */
 
-.localizacao{
+.localizacao {
     display: flex;
     margin-top: 5%;
     flex-direction: column;
     align-items: center;
-    
+    width: 90%;
+
 }
 
-.localizacao p{
+.saudacao_local {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     margin-top: 2em;
     padding: 1em;
     font-size: 2em;
-    color:  #ffffff;
+    color: #ffffff;
     text-transform: uppercase;
-    justify-items: center;
-    margin-top: 3em;
+    margin-bottom: 1em;
 }
 
-.qrcode{
+.logo_imagem {
     margin-top: 2em;
     border-radius: 15px;
-    border: 2px solid  silver;
-    justify-content: center;
+    border: 2px solid silver;
+    width: 65%;
 }
 
 
-
-.local{
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    height: 5em;
-    align-items: center;
-    justify-content: center;
-}
-
-.mapa{
+.mapa {
     display: flex;
     justify-content: center;
+    width: 80%;
+
 }
 
-.saudacao_local{
-    display: flex;
-    width: 100%;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    align-items: center;
-    border-radius: 2em;
-    margin-bottom: 3em;
-}
 
-.saudacao_local_do_iframe{
-   margin-top: 10em;
-   background-color: #ffffff;
-   color: #000;
-   text-decoration: none;
-   text-transform: uppercase;
-   text-align: center;
-   padding: 1.5rem;
-   border-radius: 3em;
-}
 
-  
 /* RODAPE DA PAGINA */
 
-.rodape{
-   display: flex;
-   flex-direction: column;
-   background: linear-gradient(black, rgb(44, 42, 42));
-   width: 100vw;
-   padding: 2em;
-   text-align: center;
-   margin-top: 4em;
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
 }
 
-.rodape p{
+.rodape {
+    background: linear-gradient(black, rgb(44, 42, 42));
+    padding: 0.5em;
+    text-align: center;
+    margin-top: 4em;
+}
+
+.rodape p {
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px  0.4px rgba(26, 27, 25, 0.525) ;
+    text-shadow: 2px 2px 0.4px rgba(26, 27, 25, 0.525);
+    text-transform: capitalize;
 }
